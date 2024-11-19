@@ -5,4 +5,17 @@ body {
 }
 .mainBar {
   background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainBar .socialAccounts {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+.mainBar .socialAccounts .mail i {
+  color: white;
 }
