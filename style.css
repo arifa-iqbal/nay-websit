@@ -44,3 +44,134 @@ body {
   }
 }
 /* nav bar styling */
+
+nav {
+  background-color: #fff; /* Light background to match the gray and green text */
+  padding: 20px;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+nav .container .toggle-btn {
+  display: none;
+}
+
+nav .container h2 {
+  color: rgba(0, 128, 0, 0.671);
+  text-transform: capitalize;
+  font-size: 58px;
+  font-weight: 600;
+  margin: 0;
+}
+
+nav .container .links ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .container .links ul li {
+  color: gray;
+  list-style: none;
+  font-size: 28px;
+  text-transform: capitalize;
+  padding: 0 40px;
+}
+
+nav .container .links ul li a {
+  text-decoration: none;
+  color: inherit; /* Use the inherited gray color */
+  transition: color 0.3s;
+}
+
+nav .container .links ul li a:hover {
+  color: rgba(0, 128, 0, 0.671); /* Hover effect to match the green branding */
+}
+
+nav .container .navLogo i {
+  color: black;
+  padding-left: 20px;
+  font-size: 24px; /* Slightly larger icons for better visibility */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+nav .container .navLogo i:hover {
+  color: rgba(0, 128, 0, 0.671); /* Green hover effect for icons */
+}
+
+/* Responsive Styles */
+@media (max-width: 1100px) {
+  nav .container h2 {
+    font-size: 48px;
+  }
+  nav .container .links ul li {
+    color: gray;
+    list-style: none;
+    font-size: 24px;
+    text-transform: capitalize;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 992px) {
+  nav .container h2 {
+    font-size: 38px;
+  }
+  nav .container .links ul li {
+    color: gray;
+    list-style: none;
+    font-size: 22px;
+    text-transform: capitalize;
+    padding: 0 15xpx;
+  }
+}
+@media (max-width: 768px) {
+  nav .container .links {
+    display: none; /* Hide links by default */
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+  nav .container .toggle-btn {
+    display: block; /* Show toggle button */
+    background: none;
+    border: none;
+    color: rgba(0, 128, 0, 0.671);
+    font-size: 36px;
+    cursor: pointer;
+  }
+
+  nav .container .links.active {
+    display: flex; /* Show links when active */
+  }
+
+  nav .container .links ul {
+    flex-direction: column; /* Stack links vertically */
+  }
+
+  nav .container .links ul li {
+    padding: 10px 0; /* Add vertical spacing between links */
+  }
+}
+
+@media (max-width: 480px) {
+  nav .container h2 {
+    font-size: 42px; /* Adjust logo size for smaller screens */
+  }
+
+  nav .container .links ul li {
+    font-size: 24px; /* Adjust link size for smaller screens */
+  }
+
+  nav .container .navLogo i {
+    font-size: 20px; /* Adjust icon size */
+  }
+}
