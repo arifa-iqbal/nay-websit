@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .mainBar {
   background-color: black;
@@ -64,7 +64,7 @@ nav .container .toggle-btn {
 nav .container h2 {
   color: rgba(0, 128, 0, 0.671);
   text-transform: capitalize;
-  font-size: 58px;
+  font-size: 40px;
   font-weight: 600;
   margin: 0;
 }
@@ -73,12 +73,16 @@ nav .container .links ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 0;
 }
 
 nav .container .links ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: gray;
   list-style: none;
-  font-size: 28px;
+  font-size: 18px;
   text-transform: capitalize;
   padding: 0 40px;
 }
