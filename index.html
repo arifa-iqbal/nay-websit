@@ -52,33 +52,19 @@
     <!-- top bar ends here -->
     <!-- nav bar starts here -->
     <nav>
-      <div class="container">
-        <h1>Zay</h1>
-        <button class="toggle-btn">
-          <i class="bi bi-list"></i>
-        </button>
-        <div class="links">
-          <ul>
-            <li>home</li>
-            <li>about</li>
-            <li>shop</li>
-            <li>contact</li>
-          </ul>
-        </div>
-        <div class="navLogo">
-          <i class="bi bi-search"></i>
-          <i class="bi bi-cart3"></i>
-          <i class="bi bi-person"></i>
-        </div>
+      <label class="logo">Zay</label>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contant</a></li>
+      </ul>
+      <div class="socialIcons">
+        <i class="bi bi-search"></i>
+        <i class="bi bi-cart3"></i>
+        <i class="bi bi-person"></i>
       </div>
     </nav>
-    <script src="./script.js">
-             const toggleBtn = document.querySelector('.toggle-btn');
-      const links = document.querySelector('.links');
-
-      toggleBtn.addEventListener('click', () => {
-        links.classList.toggle('active');
-      });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
